@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{AFD90B4B-64E3-4619-ACD8-1A4E92705106}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="autoservisObjmd/Program.cs">
+    <Files>
+      <File FileName="autoservisObjmd/Program.cs" Line="14" Column="33" IsPinned="True" />
+      <File FileName="autoservisObjmd/CarService.cs" Line="42" Column="1" IsPinned="True" />
+      <File FileName="autoservisObjmd/Owner.cs" Line="6" Column="29" />
+      <File FileName="autoservisObjmd/Car.cs" Line="19" Column="35" />
+      <File FileName="autoservisObjmd/Repair.cs" Line="25" Column="30" />
+      <File FileName="autoservisObjmd/Employee.cs" Line="24" Column="91" />
+      <File FileName="autoservisObjmd/Person.cs" Line="6" Column="23" />
+      <File FileName="autoservisObjmd/Client.cs" Line="6" Column="1" />
+      <File FileName="autoservisObjmd/OutputHelper.cs" Line="16" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="autoservisObjmd" expanded="True">
+            <Node name="autoservisObjmd" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="autoservisObjmd" expanded="True">
+            <Node name="autoservisObjmd" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.autoservisObjmd PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

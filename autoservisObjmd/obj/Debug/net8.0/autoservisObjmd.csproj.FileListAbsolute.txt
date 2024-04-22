@@ -1,0 +1,14 @@
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/bin/Debug/net8.0/autoservisObjmd
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/bin/Debug/net8.0/autoservisObjmd.deps.json
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/bin/Debug/net8.0/autoservisObjmd.runtimeconfig.json
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/bin/Debug/net8.0/autoservisObjmd.dll
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/bin/Debug/net8.0/autoservisObjmd.pdb
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/autoservisObjmd.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/autoservisObjmd.AssemblyInfoInputs.cache
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/autoservisObjmd.AssemblyInfo.cs
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/autoservisObjmd.csproj.CoreCompileInputs.cache
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/autoservisObjmd.dll
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/refint/autoservisObjmd.dll
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/autoservisObjmd.pdb
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/autoservisObjmd.genruntimeconfig.cache
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/ref/autoservisObjmd.dll
