@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="autoservisObjmd.CarService">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="owner" Type="autoservisObjmd.Owner" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="1.938" />
+        <Point X="14" Y="1.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAwAAEgEAIAAAACAMEAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>CarService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="owner" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="repairs" />
+      <Field Name="employees" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="autoservisObjmd.Client">
+    <Position X="19" Y="5" Width="1.5" />
+    <InheritanceLine Type="autoservisObjmd.Person" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.438" Y="2.247" />
+        <Point X="10.438" Y="7.332" />
+        <Point X="18.625" Y="7.332" />
+        <Point X="18.625" Y="5.438" />
+        <Point X="19" Y="5.438" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAkAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="autoservisObjmd.Employee">
+    <Position X="15" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="autoservisObjmd.Person" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="2.247" />
+        <Point X="11" Y="4.688" />
+        <Point X="15" Y="4.688" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAgAIAkAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="autoservisObjmd.Owner">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="autoservisObjmd.Person" FixedFromPoint="true">
+      <Path>
+        <Point X="11.5" Y="0.938" />
+        <Point X="12.5" Y="0.938" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Owner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="autoservisObjmd.Person">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="autoservisObjmd.Repair">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="client" Type="autoservisObjmd.Client" FixedToPoint="true">
+      <Path>
+        <Point X="19.75" Y="3.468" />
+        <Point X="19.75" Y="5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="vehicle" Type="autoservisObjmd.Vehicle" FixedToPoint="true">
+      <Path>
+        <Point X="20" Y="1.938" />
+        <Point X="21.25" Y="1.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEIQAIAAEADAAAAAQAAAAABQAAAAA=</HashCode>
+      <FileName>Repair.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="client" />
+      <Field Name="employee" />
+      <Field Name="vehicle" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="autoservisObjmd.Vehicle">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAEAAABAAAAAAAAAAAAAAAgAAAIAAA=</HashCode>
+      <FileName>Vehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
