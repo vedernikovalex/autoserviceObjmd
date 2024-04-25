@@ -12,3 +12,4 @@
 /Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/autoservisObjmd.pdb
 /Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/autoservisObjmd.genruntimeconfig.cache
 /Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/ref/autoservisObjmd.dll
+/Users/vedernikovalex/Projects/autoservisObjmd/autoservisObjmd/obj/Debug/net8.0/autoservisObjmd.sourcelink.json

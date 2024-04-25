@@ -57,15 +57,21 @@
             Vehicle vehicle3 = new Vehicle("Skoda", "Fabia", "1AP 5023", "6A3KB45R6GS249631");
             Vehicle vehicle4 = new Vehicle("Skoda", "Octavia", "8PO 9340", "7823KAS45R654249631");
 
-            servicePraha.AddRepair(vehicle1, servicePraha.Employees[0], clientPraha1, 100302, "Výměna oleje");
-            servicePraha.AddRepair(vehicle3, servicePraha.Employees[1], clientPraha2, 345021, "STK");
-            servicePraha.AddRepair(vehicle2, servicePraha.Employees[2], clientPraha2, 90022, "STK + Emise");
+            Repair repairPraha1 = new Repair(vehicle1, servicePraha.Employees[0], clientPraha1, 100302, "Výměna oleje", RandomizerHelper.GetRandomDate());
+            Repair repairPraha2 = new Repair(vehicle3, servicePraha.Employees[1], clientPraha2, 345021, "STK", RandomizerHelper.GetRandomDate());
+            Repair repairPraha3 = new Repair(vehicle2, servicePraha.Employees[2], clientPraha2, 90022, "STK + Emise", RandomizerHelper.GetRandomDate());
+            servicePraha.AddRepair(repairPraha1);
+            servicePraha.AddRepair(repairPraha2);
+            servicePraha.AddRepair(repairPraha3);
             servicePraha.PrintRepairs();
 
-            servicePlzen.AddRepair(vehicle3, servicePlzen.Employees[0], clientPlzen1, 10293, "Geometrie");
-            servicePlzen.AddRepair(vehicle3, servicePlzen.Employees[1], clientPlzen1, 30231, "STK");
+            Repair repairPlzen1 = new Repair(vehicle3, servicePlzen.Employees[0], clientPlzen1, 10293, "Geometrie", RandomizerHelper.GetRandomDate());
+            Repair repairPlzen2 = new Repair(vehicle3, servicePlzen.Employees[1], clientPlzen1, 30231, "STK", RandomizerHelper.GetRandomDate());
+            servicePlzen.AddRepair(repairPlzen1);
+            servicePlzen.AddRepair(repairPlzen2);
 
-            serviceBrno.AddRepair(vehicle4, serviceBrno.Employees[0], clientBrno1, 239412, "Výměna oleje");
+            Repair repairBrno1 = new Repair(vehicle4, serviceBrno.Employees[0], clientBrno1, 239412, "Výměna oleje", RandomizerHelper.GetRandomDate());
+            serviceBrno.AddRepair(repairBrno1);
 
             Console.WriteLine("---===&&&===---");
             // QUERIES:

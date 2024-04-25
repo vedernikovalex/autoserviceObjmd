@@ -64,14 +64,9 @@ namespace autoservisObjmd
         /// <summary>
         /// Adds a repair record to the car service.
         /// </summary>
-        /// <param name="vehicle">The vehicle being repaired.</param>
-        /// <param name="employee">The employee conducting the repair.</param>
-        /// <param name="client">The client requesting the repair.</param>
-        /// <param name="milage">The mileage of the vehicle.</param>
-        /// <param name="description">A description of the repair.</param>
-        public void AddRepair(Vehicle vehicle, Employee employee, Client client, int milage, string description)
+        /// <param name="repairToAdd">The repair to add.</param>
+        public void AddRepair(Repair repairToAdd)
         {
-            Repair repairToAdd = new Repair(vehicle, employee, client, milage, description, DateTime.Now);
             repairs.Add(repairToAdd);
         }
 
