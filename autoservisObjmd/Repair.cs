@@ -74,7 +74,8 @@ namespace autoservisObjmd
         /// <returns>A string containing information about the repair.</returns>
         public override string? ToString()
         {
-            return $"Záznam o opravě dne {date.Day}.{date.Month}.{date.Year} vozidla '{vehicle}' s najetými {milage} km. \n Práce provedena '{employee}' pro klienta '{client}' s popisem provedené práce: '{description}'";
+            return $"Záznam o opravě dne {date.Day}.{date.Month}.{date.Year} vozidla '{vehicle}' s najetými {milage} km. \n" +
+                $" Práce provedena '{employee}' pro klienta '{client}' s popisem provedené práce: '{description}'";
         }
     }
 }
