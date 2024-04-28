@@ -45,11 +45,21 @@ namespace autoservisObjmd
         /// <param name="vehicle">The vehicle being repaired.</param>
         /// <param name="employee">The employee performing the repair.</param>
         /// <param name="client">The client who owns the vehicle.</param>
-        /// <param name="milage">The milage of the vehicle at the time of the repair.</param>
+        /// <param name="milage">The milage of the vehicle at the time of the repair. Cannot be negaitive.</param>
         /// <param name="description">The description of the repair work.</param>
-        /// <param name="date">The date and time of the repair.</param>
+        /// <param name="date">The date of the repair that cannot be in the future.</param>
         public Repair(Vehicle vehicle, Employee employee, Client client, int milage, string description, DateTime date)
         {
+            if (milage < 0)
+            {
+                throw new ArgumentException("Mileage cannot be negative.", nameof(milage));
+            }
+
+            if (date > DateTime.Now)
+            {
+                throw new ArgumentException("Date cannot be in the future.", nameof(date));
+            }
+
             this.vehicle = vehicle;
             this.employee = employee;
             this.client = client;

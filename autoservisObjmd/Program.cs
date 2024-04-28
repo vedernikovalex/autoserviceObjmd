@@ -45,33 +45,40 @@
 
             serviceBrno.AddEmployee(employeeBrno1);
 
-            Client clientPraha1 = new Client("Alexey", "Ivanov", "775 843 203", "ivanov@gmail.com");
-            Client clientPraha2 = new Client("Zdenek", "Prokop", "775 343 840", "prokopzdena@center.cz");
+            try
+            {
+                Client clientPraha1 = new Client("Alexey", "Ivanov", "775 843 203", "ivanov@gmail.com");
+                Client clientPraha2 = new Client("Zdenek", "Prokop", "775 343 840", "prokopzdena@center.cz");
 
-            Client clientPlzen1 = new Client("Libor", "Libovy", "775 343 840", "libovy334@center.cz");
+                Client clientPlzen1 = new Client("Libor", "Libovy", "775 343 840", "libovy334@center.cz");
 
-            Client clientBrno1 = new Client("Martin", "Rebel", "773 343 840", "zednik@center.cz");
+                Client clientBrno1 = new Client("Martin", "Rebel", "773 343 840", "zednik@center.cz");
 
-            Vehicle vehicle1 = new Vehicle("Mercedes-Benz", "ML", "2AV 2930", "4JGDF7DE9DA203107");
-            Vehicle vehicle2 = new Vehicle("Dodge", "Charger", "4PP 0232", "2B3KA43R68H249631");
-            Vehicle vehicle3 = new Vehicle("Skoda", "Fabia", "1AP 5023", "6A3KB45R6GS249631");
-            Vehicle vehicle4 = new Vehicle("Skoda", "Octavia", "8PO 9340", "7823KAS45R654249631");
+                Vehicle vehicle1 = new Vehicle("Mercedes-Benz", "ML", "2AV 2930", "4JGDF7DE9DA203107");
+                Vehicle vehicle2 = new Vehicle("Dodge", "Charger", "4PP 0232", "2B3KA43R68H249631");
+                Vehicle vehicle3 = new Vehicle("Skoda", "Fabia", "1AP 5023", "6A3KB45R6GS249631");
+                Vehicle vehicle4 = new Vehicle("Skoda", "Octavia", "8PO 9340", "7823KAS45R654249631");
 
-            Repair repairPraha1 = new Repair(vehicle1, servicePraha.Employees[0], clientPraha1, 100302, "Výměna oleje", RandomizerHelper.GetRandomDate());
-            Repair repairPraha2 = new Repair(vehicle3, servicePraha.Employees[1], clientPraha2, 345021, "STK", RandomizerHelper.GetRandomDate());
-            Repair repairPraha3 = new Repair(vehicle2, servicePraha.Employees[2], clientPraha2, 90022, "STK + Emise", RandomizerHelper.GetRandomDate());
-            servicePraha.AddRepair(repairPraha1);
-            servicePraha.AddRepair(repairPraha2);
-            servicePraha.AddRepair(repairPraha3);
-            servicePraha.PrintRepairs();
+                Repair repairPraha1 = new Repair(vehicle1, servicePraha.Employees[0], clientPraha1, 100302, "Výměna oleje", RandomizerHelper.GetRandomDate());
+                Repair repairPraha2 = new Repair(vehicle3, servicePraha.Employees[1], clientPraha2, 345021, "STK", RandomizerHelper.GetRandomDate());
+                Repair repairPraha3 = new Repair(vehicle2, servicePraha.Employees[2], clientPraha2, 90022, "STK + Emise", RandomizerHelper.GetRandomDate());
+                servicePraha.AddRepair(repairPraha1);
+                servicePraha.AddRepair(repairPraha2);
+                servicePraha.AddRepair(repairPraha3);
+                servicePraha.PrintRepairs();
 
-            Repair repairPlzen1 = new Repair(vehicle3, servicePlzen.Employees[0], clientPlzen1, 10293, "Geometrie", RandomizerHelper.GetRandomDate());
-            Repair repairPlzen2 = new Repair(vehicle3, servicePlzen.Employees[1], clientPlzen1, 30231, "STK", RandomizerHelper.GetRandomDate());
-            servicePlzen.AddRepair(repairPlzen1);
-            servicePlzen.AddRepair(repairPlzen2);
+                Repair repairPlzen1 = new Repair(vehicle3, servicePlzen.Employees[0], clientPlzen1, 10293, "Geometrie", RandomizerHelper.GetRandomDate());
+                Repair repairPlzen2 = new Repair(vehicle3, servicePlzen.Employees[1], clientPlzen1, 30231, "STK", RandomizerHelper.GetRandomDate());
+                servicePlzen.AddRepair(repairPlzen1);
+                servicePlzen.AddRepair(repairPlzen2);
 
-            Repair repairBrno1 = new Repair(vehicle4, serviceBrno.Employees[0], clientBrno1, 239412, "Výměna oleje", RandomizerHelper.GetRandomDate());
-            serviceBrno.AddRepair(repairBrno1);
+                Repair repairBrno1 = new Repair(vehicle4, serviceBrno.Employees[0], clientBrno1, 239412, "Výměna oleje", RandomizerHelper.GetRandomDate());
+                serviceBrno.AddRepair(repairBrno1);
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine("ArgumentException: " + ex.Message);
+            }
 
             Console.WriteLine("---===&&&===---");
             // QUERIES:

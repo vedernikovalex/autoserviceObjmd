@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("autoservisObjmd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41f1e0f1e6ac1fe95db7a5daed24b2d5fe75b2e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+032912d03fe241db5b6f4b2158549a567211f460")]
 [assembly: System.Reflection.AssemblyProductAttribute("autoservisObjmd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("autoservisObjmd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
